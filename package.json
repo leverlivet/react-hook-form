@@ -23,6 +23,7 @@
     }
   },
   "scripts": {
+    "prepare": "yarn build",
     "clean": "rimraf dist",
     "prebuild": "yarn clean",
     "build": "yarn build:modern",

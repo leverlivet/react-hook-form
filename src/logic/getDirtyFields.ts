@@ -31,7 +31,7 @@ function getDirtyFieldsFromDefaultValues<T>(
   dirtyFieldsFromValues: any,
 ) {
   const isParentNodeArray = Array.isArray(data);
-
+  console.log({data, formValues, dirtyFieldsFromValues});
   if (isObject(data) || isParentNodeArray) {
     for (const key in data) {
       if (
